@@ -1,0 +1,20 @@
+<states>
+	<state id="start">
+		<transitions>
+			<transition id="creer">
+				<consequence>createDraft</consequence>
+				<destination>brouillon_cree</destination>
+				<condition>isBrouillonCreatable</condition>
+			</transition>
+			<transition id="suppr">
+				<consequence>removeDraft</consequence>
+				<destination>brouillon_supprime</destination>
+				<condition>isBrouillonRemovable</condition>
+			</transition>
+		</transitions>
+	</state>
+	<state id="brouillon_cree">
+	</state>
+	<state id="brouillon_supprime">
+	</state>
+</states>
